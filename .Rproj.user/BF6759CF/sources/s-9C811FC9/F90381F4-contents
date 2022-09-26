@@ -1,0 +1,17 @@
+setwd("C:/Users/Administrator/Desktop/")
+gdp = read.csv("GDP.csv")
+head(gdp)
+
+dir.create("C:/file")
+write.csv(gdp[which(gdp$CPI > 1),],"C:/file/GDP_new.csv")
+
+head(rock)
+write.csv(rock,"C:/file/data1.csv")
+
+%!in%
+A <- matrix(1:12,nrow = 4,byrow = T)
+A
+colSums(A)
+rowSums(A)
+sum(A)
+mean(A)
